@@ -1,5 +1,7 @@
 const navList = document.querySelector("nav ul");
-const mobileMenu = document.querySelector("header button");
+const mobileMenu = document.querySelector("header #btn-menu");
+const searchBtn = document.querySelector("nav ul .search-box #btn-search");
+const searchInput = document.querySelector("nav ul .search-box #input-search");
 
 navList.style.display = "none";
 
@@ -12,4 +14,8 @@ mobileMenu.addEventListener("click", () => {
         navList.style.display = "none";
         mobileMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
     };
+});
+
+searchBtn.addEventListener("click", () => {
+    searchInput.value = "naber aşkım ;) - dogukan";
 });

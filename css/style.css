@@ -4,6 +4,7 @@
     --bgColor: #dfdfdf;
     --bgColor2: #290c5e;
     --borderColor: rgba(255, 255, 255, 0.1);
+    --borderColor2: rgba(255, 255, 255, 0.5);
     --txtColor: #000;
     --txtColor2: #fff;
 }
@@ -74,6 +75,28 @@ nav li{
     padding: 0 2%;
     border-bottom: 1px solid var(--borderColor);
     height: 5vh;
+}
+
+.search-box{
+    height: 7.5vh;
+    border-bottom: none;
+}
+
+.search-box .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input{
+    width: 85%;
+    height: 4vh;
+    background: none;
+    border: none;
+    border-bottom: var(--borderColor2) 1px solid;
+    color: var(--txtColor2);
+    font-size: 1em;
+    outline: none;
 }
 
 main .container{
