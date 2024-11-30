@@ -17,5 +17,5 @@ mobileMenu.addEventListener("click", () => {
 });
 
 searchBtn.addEventListener("click", () => {
-    searchInput.value = "naber aşkım ;) - dogukan";
+    searchInput.focus();
 });

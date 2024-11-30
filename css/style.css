@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
-    --btnColor: linear-gradient(180deg, rgba(3,22,65,1) 0%, #290c5e 100%);
+    --btnColor: linear-gradient(180deg, rgb(25, 40, 76) 0%, #290c5e 100%);
     --bgColor: #dfdfdf;
     --bgColor2: #290c5e;
     --borderColor: rgba(255, 255, 255, 0.1);
@@ -85,23 +85,67 @@ nav li{
 .search-box .container{
     width: 100%;
     display: flex;
+    padding: 0;
     justify-content: space-between;
 }
 
 .search-box input{
-    width: 85%;
+    width: 90%;
     height: 4vh;
     background: none;
     border: none;
-    border-bottom: var(--borderColor2) 1px solid;
+    border-bottom: var(--borderColor2) 0.5px solid;
     color: var(--txtColor2);
     font-size: 1em;
     outline: none;
 }
 
+.search-box #btn-search{
+    font-size: 1em;
+}
+
 main .container{
     height: 85vh;
 }
+
+#home{
+    height: 100%;
+}
+
+#home .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5%;
+}
+
+#home h1{
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#home h1 strong{
+    font-weight: 500;
+}
+
+#home button{
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid var(--borderColor2);
+    background: var(--btnColor);
+    color: var(--txtColor2);
+    font-weight: 600;
+}
+
+#home button:hover{
+    box-shadow: 2px 2px 2px #000;
+}
+
+
+
+
 
 footer .container{
     height: 7.5vh;
