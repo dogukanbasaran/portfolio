@@ -19,7 +19,7 @@
 }
 
 body{
-    background: var(--bgTerminal);
+    background: var(--bgColor);
     height: 100vh;
     color: var(--txtColor);
     font-size: 1em;
@@ -135,12 +135,12 @@ nav li{
     font-family: "Space Mono", monospace;
 }
 
-#animated-text strong{
+.animated-text .text{
     color: transparent;
     background-image: linear-gradient(#000, #000);
     background-repeat: no-repeat;
     background-clip: text;
-    animation: changeColor 2s linear;
+    animation: changeColor 2s linear infinite;
 }
 
 @keyframes changeColor{
@@ -159,6 +159,7 @@ nav li{
 }
 
 #home button{
+    display: none;
     height: 40px;
     padding: 0 10px;
     border-radius: 5px;
