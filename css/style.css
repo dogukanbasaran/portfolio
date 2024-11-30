@@ -30,6 +30,8 @@ body a {
     font-weight: 800;
 }
 
+/* HEADER */
+
 header .container{
     height: 7.5vh;
     display: flex;
@@ -104,15 +106,15 @@ nav li{
     font-size: 1em;
 }
 
-main .container{
+
+/* HOME SECTION */
+
+#home{
     height: 85vh;
 }
 
-#home{
-    height: 100%;
-}
-
 #home .container{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -143,9 +145,30 @@ main .container{
     box-shadow: 2px 2px 2px #000;
 }
 
+/* BLOG SECTION */
+
+#blog .container{
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.blog-posts{
+    height: 300px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #000;
+}
 
 
 
+
+
+
+/* FOOTER */
 
 footer .container{
     height: 7.5vh;
