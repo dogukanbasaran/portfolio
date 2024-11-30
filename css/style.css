@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     --btnColor: linear-gradient(180deg, rgb(25, 40, 76) 0%, #290c5e 100%);
     --bgColor: #dfdfdf;
@@ -7,6 +8,7 @@
     --borderColor2: rgba(255, 255, 255, 0.5);
     --txtColor: #000;
     --txtColor2: #fff;
+    --bgTerminal: #000;
 }
 
 *{
@@ -17,7 +19,7 @@
 }
 
 body{
-    background: var(--bgColor);
+    background: var(--bgTerminal);
     height: 100vh;
     color: var(--txtColor);
     font-size: 1em;
@@ -123,12 +125,37 @@ nav li{
 }
 
 #home h1{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 300;
+    color: var(--txtColor2);
 }
 
 #home h1 strong{
     font-weight: 500;
+    font-family: "Space Mono", monospace;
+}
+
+#animated-text strong{
+    color: transparent;
+    background-image: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    background-clip: text;
+    animation: changeColor 2s linear;
+}
+
+@keyframes changeColor{
+    from{
+        background-position: -50rem 0;
+    }
+}
+
+#home input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--borderColor2);
+    color: var(--txtColor2);
+    outline: none;
+    font-size: 20px;
 }
 
 #home button{

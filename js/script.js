@@ -3,6 +3,20 @@ const mobileMenu = document.querySelector("header #btn-menu");
 const searchBtn = document.querySelector("nav ul .search-box #btn-search");
 const searchInput = document.querySelector("nav ul .search-box #input-search");
 
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
+
+header.style.display = "none";
+footer.style.display = "none";
+
+const userInput = document.querySelector("#input-user");
+
+userInput.addEventListener("keypress", (e) => {
+    if(userInput.value === "hi" && e.key === "Enter"){
+        header.style.display = "block";
+    }
+})
+
 navList.style.display = "none";
 
 mobileMenu.addEventListener("click", () => {
