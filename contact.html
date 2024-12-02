@@ -42,7 +42,15 @@
         <div class="container">
             <section id="contact">
                 <div class="container">
-                    <h1>CONTACT</h1>
+                    <form class="contact-form" id="contact-form">
+                        <div id="form-inputs">
+                            <input type="text" id="firstName" name="firstname" placeholder="Your Name" required>
+                            <input type="text" id="lastName" name="lastname" placeholder="Your Last Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your E-Mail" required>
+                        </div>
+                        <textarea name="message" id="message" placeholder="Your Message" rows="10" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
             </section>
         </div>

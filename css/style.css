@@ -6,6 +6,7 @@
     --bgColor2: #290c5e;
     --borderColor: rgba(255, 255, 255, 0.1);
     --borderColor2: rgba(255, 255, 255, 0.5);
+    --borderColor3: rgba(0, 0, 0, 0.2);
     --txtColor: #000;
     --txtColor2: #fff;
     --bgTerminal: #000;
@@ -158,13 +159,13 @@ nav li{
 }
 
 #home button{
-    display: none;
     height: 40px;
     padding: 0 10px;
     border-radius: 5px;
     border: 1px solid var(--borderColor2);
     background: var(--btnColor);
     color: var(--txtColor2);
+    cursor: pointer;
     font-weight: 600;
 }
 
@@ -235,10 +236,75 @@ nav li{
     border: 1px solid var(--borderColor2);
     background: var(--btnColor);
     color: var(--txtColor2);
+    cursor: pointer;
     font-weight: 600;
 }
 
 .blog-btn button:hover{
+    box-shadow: 2px 2px 2px #000;
+}
+
+
+/* CONTACT SECTION */
+
+#contact{
+    height: 85vh;
+}
+
+#contact .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    width: 90%;
+    padding: 5%;
+    background: #fff;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.contact-form #form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-inputs input{
+    height: 30px;
+    border: 1px solid var(--borderColor3);
+    border-radius: 5px;
+    outline: none;
+    padding: 2%;
+    background: transparent;
+}
+
+.contact-form textarea{
+    border: 1px solid var(--borderColor3);
+    border-radius: 5px;
+    outline: none;
+    padding: 2%;
+    background: transparent;
+}
+
+.contact-form button{
+    background: var(--btnColor);
+    color: var(--txtColor2);
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form button:hover{
     box-shadow: 2px 2px 2px #000;
 }
 
