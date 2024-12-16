@@ -1,3 +1,3 @@
-<header class="color:red">
+<header style="color:red">
   asdfasdfasd
 </header>
